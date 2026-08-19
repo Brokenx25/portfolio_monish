@@ -20,7 +20,7 @@ No build step; fonts load from a CDN. Keep the PDFs beside `index.html`.
    # git push -u origin main
    ```
 3. On the repo → **Settings → Pages → Source: Deploy from a branch → `main` / `root` → Save.**
-4. Live in ~1 minute at **https://brokenx25.github.io/portfolio**
+4. Live in ~1 minute at **https://brokenx25.github.io/portfolio_monish**
 
 ## Alternative — Netlify (no Git)
 app.netlify.com → **Add new site → Deploy manually** → drag this `portfolio` folder in.
