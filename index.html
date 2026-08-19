@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monish Naresh Kumar — AI Engineer</title>
+<meta name="description" content="Monish Naresh Kumar — AI Engineer. Computer vision, machine learning, LLM systems, and robotics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t;}catch(e){}</script>
+<style>
+:root[data-theme="dark"]{--bg:#0d0d10;--bg2:#15151a;--ink:#eceae4;--soft:#a5a29a;--muted:#6d6b64;--line:rgba(255,255,255,.10);--card:rgba(255,255,255,.028);--cardb:rgba(255,255,255,.09);--accent:#e8623d;--spot:rgba(232,98,61,.14)}
+:root[data-theme="light"]{--bg:#f5f3ee;--bg2:#eceadf;--ink:#1a1712;--soft:#4c483f;--muted:#8b877c;--line:rgba(0,0,0,.11);--card:#ffffff;--cardb:rgba(0,0,0,.08);--accent:#c2461d;--spot:rgba(194,70,29,.10)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .5s,color .5s;overflow-x:hidden}
+::selection{background:var(--accent);color:#fff}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Fraunces",Georgia,serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+@media(max-width:640px){.wrap{padding:0 22px}}
+.lbl{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* cursor spotlight */
+.spot{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(480px circle at var(--mx,-500px) var(--my,-500px),var(--spot),transparent 72%);transition:background .12s}
+@media(pointer:coarse){.spot{display:none}}
+
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 74%,transparent);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1160px;margin:0 auto;padding:0 40px}
+.brand{font-family:"Fraunces",serif;font-weight:500;font-size:1.05rem}
+.brand b{color:var(--accent)}
+.nav-r{display:flex;align-items:center;gap:28px}
+.menu{display:flex;gap:26px;font-size:.85rem}
+.menu a{color:var(--soft);position:relative;padding:3px 0}
+.menu a:hover{color:var(--ink)}
+.menu a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--accent);transition:width .3s}
+.menu a:hover::after{width:100%}
+.tgl{width:50px;height:26px;border:1px solid var(--line);border-radius:100px;background:var(--card);position:relative;cursor:pointer;flex:none}
+.tgl::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--accent);transition:left .32s cubic-bezier(.6,.2,.1,1)}
+:root[data-theme="light"] .tgl::after{left:26px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:23px;height:2px;background:var(--ink);transition:.3s}
+@media(max-width:760px){.menu{display:none}.burger{display:flex}.nav{padding:0 22px}}
+/* mobile overlay */
+.mobile{position:fixed;inset:0;z-index:99;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:8px;padding:0 34px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.6,.05,.1,1);opacity:0}
+.mobile.open{transform:none;opacity:1}
+.mobile a{font-family:"Fraunces",serif;font-size:2.2rem;font-weight:400;padding:12px 0;border-bottom:1px solid var(--line)}
+.mobile a span{font-size:.9rem;color:var(--accent);margin-right:12px;font-family:"Schibsted Grotesk",sans-serif}
+
+/* hero */
+.hero{position:relative;z-index:2;padding:170px 0 90px}
+.avail{display:inline-flex;align-items:center;gap:10px;margin-bottom:30px}
+.avail .d{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pl 2.4s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}70%{box-shadow:0 0 0 11px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-family:"Fraunces",serif;font-weight:300;font-size:clamp(2.5rem,7vw,5.4rem);line-height:1.0;letter-spacing:-.025em}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--accent)}
+.hero .lede{margin-top:30px;max-width:600px;font-size:clamp(1.02rem,2.2vw,1.28rem);color:var(--soft)}
+.hero .lede b{color:var(--ink);font-weight:500}
+.meta{margin-top:44px;display:flex;gap:44px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
+.meta .k{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.meta .v{font-size:.96rem}
+.cta{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;padding:14px 26px;border-radius:100px;transition:background .3s,color .3s,border-color .3s,transform .25s cubic-bezier(.2,.7,.2,1)}
+.btn.fill{background:var(--ink);color:var(--bg)}
+.btn.fill:hover{background:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-3px)}
+.btn.out{border:1px solid var(--line)}
+.btn.out:hover{border-color:var(--accent);color:var(--accent)}
+.btn .ar{transition:transform .3s}
+.btn:hover .ar{transform:translate(3px,-3px)}
+
+/* sections */
+section{position:relative;z-index:2;padding:100px 0;border-top:1px solid var(--line)}
+.shead{display:flex;align-items:baseline;gap:16px;margin-bottom:48px;flex-wrap:wrap}
+.shead .i{font-family:"Fraunces",serif;font-style:italic;color:var(--accent)}
+.shead h2{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(1.8rem,4.4vw,2.9rem);letter-spacing:-.01em}
+
+/* work cards */
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:820px){.pgrid{grid-template-columns:1fr}}
+.card{position:relative;border:1px solid var(--cardb);background:var(--card);border-radius:16px;padding:30px 28px;overflow:hidden;transition:transform .25s cubic-bezier(.2,.7,.2,1),border-color .3s;will-change:transform}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--cardb))}
+.card .glow{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--cx,50%) var(--cy,50%),var(--spot),transparent 60%)}
+.card:hover .glow{opacity:1}
+.card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.card .n{font-family:"Fraunces",serif;font-style:italic;color:var(--muted)}
+.card .cat{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-family:"Fraunces",serif;font-weight:400;font-size:1.5rem;line-height:1.15;letter-spacing:-.01em}
+.card p{color:var(--soft);font-size:.95rem;margin:12px 0 18px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags i{font-style:normal;font-size:.72rem;color:var(--soft);border:1px solid var(--line);border-radius:100px;padding:4px 11px}
+
+/* about */
+.lede2{font-family:"Fraunces",serif;font-weight:300;font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.34;letter-spacing:-.01em;max-width:960px}
+.lede2 em{font-style:italic;color:var(--accent)}
+.stats{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stats .num{font-family:"Fraunces",serif;font-size:2.2rem;line-height:1}
+.stats .t{margin-top:9px;color:var(--muted);font-size:.86rem}
+@media(max-width:720px){.stats{grid-template-columns:1fr 1fr;gap:24px}}
+
+/* stack */
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:680px){.sgrid{grid-template-columns:1fr}}
+.scard{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--card)}
+.scard h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.82rem;color:var(--ink);border:1px solid var(--line);border-radius:100px;padding:6px 12px;background:var(--card)}
+
+/* edu */
+.edu{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;border:1px solid var(--line);border-left:2px solid var(--accent);border-radius:12px;padding:28px;background:var(--card)}
+.edu h3{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(1.4rem,3.2vw,2rem)}
+.edu .s{color:var(--muted);margin-top:6px;font-size:.92rem}
+.edu .w{font-family:"Fraunces",serif;font-style:italic;color:var(--accent)}
+
+/* footer */
+footer{position:relative;z-index:2;padding:110px 0 48px;border-top:1px solid var(--line)}
+footer h2{font-family:"Fraunces",serif;font-weight:300;font-size:clamp(2.3rem,7vw,5rem);line-height:1.03;letter-spacing:-.02em}
+footer .em{display:inline-block;margin-top:30px;font-family:"Fraunces",serif;font-style:italic;font-size:clamp(1.3rem,3vw,2rem);border-bottom:1px solid var(--line);will-change:transform}
+footer .em{transition:color .3s,border-color .3s,transform .25s cubic-bezier(.2,.7,.2,1)}
+footer .em:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+footer .fbot{margin-top:70px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.8rem;color:var(--muted)}
+footer .fbot a:hover{color:var(--ink)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="spot"></div>
+
+<header>
+  <nav class="nav">
+    <div class="brand">Monish Naresh Kumar<b>.</b></div>
+    <div class="nav-r">
+      <div class="menu">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+      </div>
+      <button class="tgl" id="tgl" aria-label="Toggle light / dark theme"></button>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile" id="mobile">
+  <a href="#work"><span>01</span>Work</a><a href="#about"><span>02</span>About</a>
+  <a href="#stack"><span>03</span>Stack</a><a href="#contact"><span>04</span>Contact</a>
+</div>
+
+<div class="wrap">
+  <section class="hero" style="border-top:none">
+    <div class="reveal avail"><span class="d"></span><span class="lbl">Available October 2026 — Singapore</span></div>
+    <h1 class="reveal">AI Engineer building<br><em>intelligent</em> systems<br>that reach production.</h1>
+    <p class="reveal lede"><b>Monish Naresh Kumar</b> — I design and deploy end-to-end AI: computer vision, speech, and LLM-powered applications, brought to life on real robots with ROS 2.</p>
+    <div class="reveal meta">
+      <div><div class="k">Focus</div><div class="v">Applied AI · Machine Learning</div></div>
+      <div><div class="k">Also</div><div class="v">Robotics Software</div></div>
+      <div><div class="k">Based</div><div class="v">Singapore</div></div>
+    </div>
+    <div class="reveal cta">
+      <a class="btn fill mag" href="#work">Selected work <span class="ar">↗</span></a>
+      <a class="btn out mag" href="./Monish_Naresh_Kumar_CV.pdf">Download CV <span class="ar">↗</span></a>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><section id="work" style="border-top:none">
+  <div class="reveal shead"><span class="i serif">01</span><h2 class="serif">Selected work</h2></div>
+  <div class="pgrid">
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">01</span><span class="cat">Final-Year Project · ongoing</span></div>
+      <h3>Autonomous Medical Care Robot — Unitree Go2</h3>
+      <p>A multi-process care-robot stack where a single motor arbiter (priority FSM + LiDAR obstacle veto) safely owns all motion — with multi-person pose &amp; fall detection, face/emotion/gesture recognition, a Groq-STT voice assistant with emergency escalation and medication reminders, and an authenticated dashboard streaming live ESP32 vitals.</p>
+      <div class="tags"><i>ROS 2</i><i>YOLOv8</i><i>LLM</i><i>SLAM</i><i>ESP32</i></div>
+    </div>
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">02</span><span class="cat">LLM / Conversational AI</span></div>
+      <h3>Conversational AI Voice Companion</h3>
+      <p>Wake-word detection, Groq speech-to-text, a rule-first safety router, and a hybrid LLM brain with domain guardrails and barge-in interruption — resilient even offline.</p>
+      <div class="tags"><i>Python</i><i>Groq STT</i><i>LLM routing</i></div>
+    </div>
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">03</span><span class="cat">Computer Vision</span></div>
+      <h3>Real-Time Perception System</h3>
+      <p>A real-time pipeline for face identification, emotion recognition, hand-gesture recognition (a trained Keras model), and multi-person pose / fall detection.</p>
+      <div class="tags"><i>OpenCV</i><i>MediaPipe</i><i>YOLOv8</i><i>ONNX</i></div>
+    </div>
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">04</span><span class="cat">Deep Learning</span></div>
+      <h3>CNN Image Classification — CIFAR-10</h3>
+      <p>Convolutional networks trained on CIFAR-10, benchmarking the Adam and SGD optimisers for convergence and accuracy.</p>
+      <div class="tags"><i>Python</i><i>TensorFlow / Keras</i><i>CNN</i></div>
+    </div>
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">05</span><span class="cat">Autonomous Navigation</span></div>
+      <h3>Search-and-Rescue Mobile Robot</h3>
+      <p>A mobile robot that autonomously navigates a hazardous environment, analysing dangers and planning safe routes, with a custom PyQt5 control interface.</p>
+      <div class="tags"><i>CoppeliaSim</i><i>Python</i><i>PyQt5</i></div>
+    </div>
+    <div class="reveal card tilt"><div class="glow"></div>
+      <div class="top"><span class="n serif">06</span><span class="cat">Embedded</span></div>
+      <h3>Wireless Comms — Dual STM32</h3>
+      <p>A reliable wireless link between two STM32 boards over XBee radios, with interrupt-driven UART and ADC sensor-data exchange.</p>
+      <div class="tags"><i>STM32</i><i>XBee</i><i>UART</i><i>C</i></div>
+    </div>
+  </div>
+</section></div>
+
+<div class="wrap"><section id="about">
+  <div class="reveal shead"><span class="i serif">02</span><h2 class="serif">About</h2></div>
+  <p class="reveal lede2">I take AI systems from notebook to <em>production</em> — real-time computer-vision pipelines, deep-learning models, and conversational <em>LLM</em> systems with safety guardrails — deployed onto real robots through ROS 2.</p>
+  <div class="reveal stats">
+    <div><div class="num serif">6+</div><div class="t">Featured projects</div></div>
+    <div><div class="num serif">ROS 2</div><div class="t">Care-robot FYP</div></div>
+    <div><div class="num serif">15+</div><div class="t">Subsystems built</div></div>
+    <div><div class="num serif">Oct 26</div><div class="t">Available</div></div>
+  </div>
+</section></div>
+
+<div class="wrap"><section id="stack">
+  <div class="reveal shead"><span class="i serif">03</span><h2 class="serif">Technical stack</h2></div>
+  <div class="sgrid">
+    <div class="reveal scard"><h4>AI &amp; Machine Learning</h4><div class="chips">
+      <span class="chip">TensorFlow / Keras</span><span class="chip">scikit-learn</span><span class="chip">OpenCV</span><span class="chip">MediaPipe</span><span class="chip">YOLOv8</span><span class="chip">ONNX</span><span class="chip">CNNs</span><span class="chip">LLMs (Groq, Whisper, Ollama)</span></div></div>
+    <div class="reveal scard"><h4>Programming</h4><div class="chips">
+      <span class="chip">Python</span><span class="chip">C / C++</span><span class="chip">C#</span><span class="chip">SQL</span><span class="chip">MATLAB</span><span class="chip">Lua</span><span class="chip">Git</span><span class="chip">pytest</span></div></div>
+    <div class="reveal scard"><h4>Robotics &amp; Simulation</h4><div class="chips">
+      <span class="chip">ROS 2 (Humble)</span><span class="chip">Nav2 / SLAM</span><span class="chip">Unitree Go2</span><span class="chip">CoppeliaSim</span><span class="chip">Webots</span></div></div>
+    <div class="reveal scard"><h4>Embedded &amp; Hardware</h4><div class="chips">
+      <span class="chip">STM32</span><span class="chip">ESP32</span><span class="chip">Arduino</span><span class="chip">XBee / UART</span><span class="chip">Fusion 360</span><span class="chip">3D printing</span></div></div>
+  </div>
+</section></div>
+
+<div class="wrap"><section id="education">
+  <div class="reveal shead"><span class="i serif">—</span><h2 class="serif">Education</h2></div>
+  <div class="reveal edu">
+    <div><h3 class="serif">B.Eng. Robotics &amp; Artificial Intelligence</h3><div class="s">PSB Academy — 6 Raffles Boulevard, #03-200, Singapore 039594</div></div>
+    <div class="w">Expected September 2026</div>
+  </div>
+</section></div>
+
+<footer id="contact"><div class="wrap">
+  <div class="reveal lbl" style="margin-bottom:24px">04 — Contact</div>
+  <h2 class="reveal serif">Let's build something<br>worth deploying.</h2>
+  <a class="reveal em mag" href="mailto:monishnareshkumar@gmail.com">monishnareshkumar@gmail.com</a>
+  <div class="fbot">
+    <span>© <b id="yr"></b> Monish Naresh Kumar · Singapore</span>
+    <div style="display:flex;gap:22px;flex-wrap:wrap">
+      <a href="https://github.com/Brokenx25" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/monish-naresh-kumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="./Monish_Naresh_Kumar_CV.pdf">CV</a>
+      <a href="./Monish_Naresh_Kumar_Resume.pdf">Résumé</a>
+      <a href="tel:+6581793493">+65 8179 3493</a>
+    </div>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, yr=document.getElementById('yr'); if(yr)yr.textContent=new Date().getFullYear();
+  // theme toggle
+  document.getElementById('tgl').addEventListener('click',function(){
+    var n=root.dataset.theme==='dark'?'light':'dark'; root.dataset.theme=n;
+    try{localStorage.setItem('theme',n);}catch(e){}
+  });
+  // mobile menu
+  var burger=document.getElementById('burger'), mobile=document.getElementById('mobile');
+  burger.addEventListener('click',function(){mobile.classList.toggle('open');});
+  mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobile.classList.remove('open');});});
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(Math.min(i%6,5)*60)+'ms';io.observe(el);});
+  var fine=matchMedia('(pointer:fine)').matches;
+  if(fine){
+    // spotlight follows cursor
+    window.addEventListener('pointermove',function(e){root.style.setProperty('--mx',e.clientX+'px');root.style.setProperty('--my',e.clientY+'px');});
+    // 3D tilt + glow on cards
+    document.querySelectorAll('.tilt').forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();var dx=(e.clientX-r.left)/r.width,dy=(e.clientY-r.top)/r.height;
+        c.style.transform='perspective(900px) rotateY('+((dx-.5)*6)+'deg) rotateX('+(-(dy-.5)*6)+'deg) translateY(-4px)';
+        c.style.setProperty('--cx',(dx*100)+'%');c.style.setProperty('--cy',(dy*100)+'%');});
+      c.addEventListener('pointerleave',function(){c.style.transform='';});
+    });
+  }
+})();
+</script>
+</body>
+</html>
